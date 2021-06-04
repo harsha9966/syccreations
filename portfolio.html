@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+        <meta name="description" content="" />
+        <meta name="keywords" content="jquery, carousel, image gallery, slider, responsive, flexible, fluid, resize, css3" />
+        <meta name="author" content="" />
+        <title>Syc Creations</title>
+        <!-- CSS -->
+          <!-- Bootstrap Core CSS -->
+          <link href="css/bootstrap.min.css" rel="stylesheet">
+          <!-- Custom CSS -->
+          <link href="css/full-slider.css" rel="stylesheet">
+          <link rel="shortcut icon" href="../favicon.ico"> 
+          <link rel="stylesheet" type="text/css" href="css/demo.css" />
+          <link rel="stylesheet" type="text/css" href="css/style.css" />
+          <link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+          <link rel="stylesheet" type="text/css" href="css/portfoliowaves.css" />
+          <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+          <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
+
+        <!-- End CSS -->
+
+        <!-- Jquery-->
+            <script src="https://use.fontawesome.com/dffe4822f3.js"></script>
+            <!--Google Analytics tracker-->
+              <script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-102422779-1', 'auto');
+              ga('send', 'pageview');
+              </script>
+            <!-- End Google Analytics tracker-->
+              <noscript>
+                  <style>
+                    .es-carousel ul{
+                      display:block;
+                    }
+                  </style>
+              </noscript>
+              <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">  
+                <div class="rg-image-wrapper">
+                  {{if itemsCount > 1}}
+                    <div class="rg-image-nav">
+                      <a href="#" class="rg-image-nav-prev">Previous Image</a>
+                      <a href="#" class="rg-image-nav-next">Next Image</a>
+                    </div>
+                  {{/if}}
+                  <div class="rg-image"></div>
+                  <div class="rg-loading"></div>
+                  <div class="rg-caption-wrapper">
+                    <div class="rg-caption" style="display:none;">
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+              </script>
+        <!-- End Jquery -->
+    </head>
+
+    <body>
+      <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button style="margin-top:20px;" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                      <img src="img/banners/Wiz.png" alt="LOGO" class="img-responsive" width="150px">
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-collapse-main">
+                    <ul class="nav navbar-nav navbar-right" style="background-color: #f7f7f7; text-align: center;">
+                      <li>
+                            <a href="index.html" class="actives">Home</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="">Projects<span class="caret"></span></a>
+                             <ul class="dropdown-menu">
+                                    <li><a href="videoprojects.html">Video Projects</a></li>
+                                    <li><a href="graphicprojects.html">Graphic Projects</a></li>
+                                    <li><a href="webprojects.html">Web Projects</a></li>
+                                    
+                        </li>
+                    </ul>
+                        <li>
+                        <li>
+                            <a href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                       
+              <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="2017.html">Team<span class="caret"></span></a>
+                             <ul class="dropdown-menu">
+                                    <li><a href="currentteam.html">Current Team</a></li>
+                                    <li><a href="aluminiteam.html">Alumni Team</a></li>
+                        </li>
+                    </ul>
+                        <li>
+                            <a href="contacts.html">Contact</a>
+                        </li>                  
+                    
+                        <hr>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+      <!-- End Navbar --> 
+
+      <!-- Waves Animated -->
+          <w>
+         <svg class="waves" width="1260" height="321.75" viewBox="0 0 960 214.5" preserveAspectRatio="xMinYMid meet"><defs><style>.waves>path{-webkit-animation:w 17390ms ease-in-out infinite alternate-reverse both;-moz-animation:w 17390ms ease-in-out infinite alternate-reverse both;-ms-animation:w 17390ms ease-in-out infinite alternate-reverse both;-o-animation:w 17390ms ease-in-out infinite alternate-reverse both;animation:w 17390ms ease-in-out infinite alternate-reverse both;-webkit-animation-timing-function:cubic-bezier(.25,0,.75,1);-moz-animation-timing-function:cubic-bezier(.25,0,.75,1);-ms-animation-timing-function:cubic-bezier(.25,0,.75,1);-o-animation-timing-function:cubic-bezier(.25,0,.75,1);animation-timing-function:cubic-bezier(.25,0,.75,1);-webkit-will-change:transform;-moz-will-change:transform;-ms-will-change:transform;-o-will-change:transform;will-change:transform}svg>path:nth-of-type(1){-webkit-animation-duration:20580ms;-moz-animation-duration:20580ms;-ms-animation-duration:20580ms;-o-animation-duration:20580ms;animation-duration:20580ms}svg>path:nth-of-type(2){-webkit-animation-delay:-2690ms;-moz-animation-delay:-2690ms;-ms-animation-delay:-2690ms;-o-animation-delay:-2690ms;animation-delay:-2690ms;-webkit-animation-duration:13580ms;-moz-animation-duration:13580ms;-ms-animation-duration:13580ms;-o-animation-duration:13580ms;animation-duration:13580ms}g>path:nth-of-type(1){-webkit-animation-delay:-820ms;-moz-animation-delay:-820ms;-ms-animation-delay:-820ms;-o-animation-delay:-820ms;animation-delay:-820ms;-webkit-animation-duration:10730ms;-moz-animation-duration:10730ms;-ms-animation-duration:10730ms;-o-animation-duration:10730ms;animation-duration:10730ms}svg>path:nth-of-type(1),g>path:nth-of-type(2){-webkit-animation-direction:alternate;-moz-animation-direction:alternate;-ms-animation-direction:alternate;-o-animation-direction:alternate;animation-direction:alternate}@-webkit-keyframes w{0%{-webkit-transform:translateX(-750px);transform:translateX(-750px)}100%{-webkit-transform:translateX(-20px);transform:translateX(-20px)}}@-moz-keyframes w{0%{-moz-transform:translateX(-750px);transform:translateX(-750px)}100%{-moz-transform:translateX(-20px);transform:translateX(-20px)}}@-ms-keyframes w{0%{-ms-transform:translateX(-750px);transform:translateX(-750px)}100%{-ms-transform:translateX(-20px);transform:translateX(-20px)}}@-o-keyframes w{0%{-o-transform:translateX(-750px);transform:translateX(-750px)}100%{-o-transform:translateX(-20px);transform:translateX(-20px)}}@keyframes w{0%{-webkit-transform:translateX(-750px);-moz-transform:translateX(-750px);-ms-transform:translateX(-750px);-o-transform:translateX(-750px);transform:translateX(-750px)}100%{-webkit-transform:translateX(-20px);-moz-transform:translateX(-20px);-ms-transform:translateX(-20px);-o-transform:translateX(-20px);transform:translateX(-20px)}}</style><linearGradient id="w"><stop stop-color="#00A8DE"/><stop offset="0.2" stop-color="#333391"/><stop offset="0.4" stop-color="#E91388"/><stop offset="0.6" stop-color="#EB2D2E"/></linearGradient></defs><path fill="url(#w)" d="M2662.6 1S2532 41.2 2435 40.2c-19.6-.2-37.3-1.3-53.5-2.8 0 0-421.3-59.4-541-28.6-119.8 30.6-206.2 75.7-391 73.3-198.8-2-225.3-15-370.2-50-145-35-218 37-373.3 36-19.6 0-37.5-1-53.7-3 0 0-282.7-36-373.4-38C139 26 75 46-1 46v106c17-1.4 20-2.3 37.6-1.2 130.6 8.4 210 56.3 287 62.4 77 6 262-25 329.3-23.6 67 1.4 107 22.6 193 23.4 155 1.5 249-71 380-62.5 130 8.5 209 56.3 287 62.5 77 6 126-18 188-18 61.4 0 247-38 307.4-46 159.3-20 281.2 29 348.4 30 67 2 132.2 6 217.4 7 39.3 0 87-11 87-11V1z"/><path fill="#F2F5F5" d="M2663.6 73.2S2577 92 2529 89c-130.7-8.5-209.5-56.3-286.7-62.4s-125.7 18-188.3 18c-5 0-10-.4-14.5-.7-52-5-149.2-43-220.7-39-31.7 2-64 14-96.4 30-160.4 80-230.2-5.6-340.4-18-110-12-146.6 20-274 36S820.4 0 605.8 0C450.8 0 356 71 225.2 62.2 128 56 60.7 28-.3 11.2V104c22 7.3 46 14.2 70.4 16.7 110 12.3 147-19.3 275-35.5s350 39.8 369 43c27 4.3 59 8 94 10 13 .5 26 1 39 1 156 2 250-70.3 381-62 130.5 8.2 209.5 56.3 286.7 62 77 6.4 125.8-18 188.3-17.5 5 0 10 .2 14.3.6 52 5 145 49.5 220.7 38.2 32-5 64-15 96.6-31 160.5-79.4 230.3 6 340 18.4 110 12 146.3-20 273.7-36l15.5-2V73l1-.5z"/><g fill="none" stroke="#E2E9E9" stroke-width="1"><path d="M0 51.4c3.4.6 7.7 1.4 11 2.3 133.2 34 224.3 34 308.6 34 110.2 0 116.7 36.6 229.8 26 113-11 128.7-44 222-42.6C865 73 889 38 1002 27c113-10.8 119.6 25.6 229.8 25.6 84.4 0 175.4 0 308.6 34 133 34.2 277-73 379.4-84.3 204-22.5 283.6 128.7 283.6 128.7"/><path d="M0 6C115.7-6 198.3 76.6 308 76.6c109.6 0 131.8-20 223-28.3 114.3-10.2 238.2 0 238.2 0s124 10.2 238.3 0c91-8.2 113.2-28 223-28S1425 103 1541 91c115.8-11.8 153.3-69 269.3-84.6 116-15.5 198.4 71 308 71 109.8 0 131.8-20 223-28 114-10.2 237.7 0 237.7 0s37.4 2.4 82.8 3.7"/></g></svg>
+         <h3>Portfolio</h3>
+          </w>
+      <!-- End Waves Animated -->
+      
+      <!-- Headshots -->
+                  <div class="circles">
+                    <div class="category1">
+                       <a href="#"><img src="img/portfolioimages/portfoliohomepage/Carol Circle.png"  /><p style="color: black">Carol Schumacher</p></a>  
+                    </div>
+                    <div class="category1">
+                       <a href="#"><img src="img/portfolioimages/portfoliohomepage/Hannah Circle.png"  /><p style="color: black">Hannah Walk</p></a>  
+                    </div>
+                    <div class="category1">
+                       <a href="#"><img src="img/portfolioimages/portfoliohomepage/Jess Circle.png"  /><p style="color: black">Jess Hughes</p></a>  
+                    </div>                  
+                    <div class="category1">
+                       <a href="#"><img src="img/portfolioimages/portfoliohomepage/Sushanth Circle.png"  /><p style="color: black">Sushanth Thokala</p></a>  
+                    </div>
+                  </div> 
+      <!-- Headshots -->
+      
+
+      <!-- Gallery -->
+        <div class="container">      
+          <div class="content">
+            <!-- <h1>Image Gallery <span>Our Work</span></h1> -->
+            <div id="rg-gallery" class="rg-gallery">
+              <div class="rg-thumbs">
+                <!-- Elastislide Carousel Thumbnail Viewer -->
+                <div class="es-carousel-wrapper">
+                  <div class="es-nav">
+                    <span class="es-nav-prev">Previous</span>
+                    <span class="es-nav-next">Next</span>
+                  </div>
+                  <div class="es-carousel">
+                    <ul>
+                      <li><a href="#"><img src="img/portfolioimages/thumbs/Sycamore Video Add Thumbnail.png" data-large="img/portfolioimages/SYCAMORE VIDEO ad2.0.jpg" alt="image01" data-description="Sycmaore Video" /></a></li>
+
+                      <li><a href="#"><img src="img/portfolioimages/thumbs/Sycamore Video logo Thumbnail.png" data-large="img/portfolioimages/Sycamore Video Logo.jpg" alt="image02" data-description="Sycamore Video Logo" /></a></li>
+                      
+                      <li><a href="#"><img src="img/portfolioimages/thumbs/WZIS Thumbnail .png" data-large="img/portfolioimages/WZIS ad concept.jpg" alt="image03" data-description="WZIS Ad" /></a></li>
+                      
+                      <li><a href="#"><img src="img/portfolioimages/thumbs/Statesman Newsletter Add Thumbnail2.png" data-large="img/portfolioimages/statesman newsletter 2.jpg" alt="image04" data-description="Statesman Newsletter 2" /></a></li>
+                      
+                      <li><a href="#"><img src="img/portfolioimages/thumbs/Statesman Newsletter Add Thumbnail.png" data-large="img/portfolioimages/statesman newsletter 3.jpg" alt="image05" data-description="Statesman Newsletter 3" /></a></li>
+                      
+                      <li><a href="#"><img src="img/portfolioimages/thumbs/New Syc Creations Website Add Thumbnail.png" data-large="img/portfolioimages/SYC CREATIONS2.0.jpg" alt="image06" data-description="Syc Creations" /></a></li>
+                      
+                      <li><a href="#"><img src="img/portfolioimages/thumbs/Sycamore Video Banner Thumbnail.png" data-large="img/portfolioimages/sycamore vid concept 1.jpg" alt="image08" data-description="sycamore Video Concept" /></a></li>
+                      
+                      <li><a href="#"><img src="img/portfolioimages/thumbs/Wizard Thumbnail .png" data-large="img/portfolioimages/ISU_Wizard.jpg" alt="image08" data-description="Syc Creations Wizard" /></a></li>
+                      
+                      <li><a href="#"><img src="img/portfolioimages/thumbs/Statesman Thumbnail .png" data-large="img/portfolioimages/INstatesman2011.jpg" alt="image9" data-description="Indiana Statesman" /></a></li>
+                      
+                      <li><a href="#"><img src="img/portfolioimages/thumbs/WZIS Thumbnail .png" data-large="img/portfolioimages/blue oval.jpg" alt="image10" data-description="Z 90.7FM" /></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- End Elastislide Carousel Thumbnail Viewer -->
+              </div><!-- rg-thumbs -->
+            </div><!-- rg-gallery -->
+          </div><!-- content -->
+        </div><!-- container -->
+      <!-- End Gallery -->
+      
+      <!-- Footer -->
+        <div class="container-fluid">
+              <!-- Footer -->
+              <footer>
+                  <div class="row rowFooter">
+                      <div class="col-lg-8  col-md-8 col-sm-8 fMid pull-right">
+                          <p>329 Dreiser Hall<br/>
+                          Indiana State University</br>
+                          Terre Haute, Indiana 47809</br>
+                          Office: 812-237-3252</br>
+                          Email: <a href="mailto:Philip.Glende@indstate.edu">Jeff.Larson@indstate.edu</a></p>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-4 fLogo">
+                <div class="logos">
+                  <a href="https://www.facebook.com/ISUSycCreations" target="_blank"><i class="fa fa-facebook-square fa-3x"></i></a>
+                </div>
+                <div class="logos">
+                  <a href="https://twitter.com/syccreations" target="_blank"><i class="fa fa-twitter fa-3x"></i></a>
+                </div>
+                <div class="logos">
+                  <a href="https://www.instagram.com/syccreations" target="_blank"><i class="fa fa-instagram fa-3x"></i></a>
+                </div>
+                      </div>
+                  </div>
+                  <!-- /.row -->
+              </footer>
+        </div>
+      <!-- End Footer -->
+     
+      <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+       
+        <!-- Custom -->
+        <script src="js/custom.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- gallery jquery -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/jquery.elastislide.js"></script>
+        <script type="text/javascript" src="js/gallery.js"></script>
+      <!-- End JQuery -->
+    </body>
+</html>
